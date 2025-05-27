@@ -121,6 +121,14 @@ img {
         gap: 2rem;
     }
 }
+@media screen and (max-width: 768px) {
+  .navegacion__enlace,
+  .logo__nombre {
+    color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);/* blanco para móviles */
+  }
+}
+
 .navegacion__enlace {
     display: block;
     text-align: center;
