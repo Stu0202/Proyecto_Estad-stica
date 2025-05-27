@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogDeCafé</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Trabajo<span class="logo__bold">De Aplicación</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="index.html" class="navegacion__enlace navegacion-h">Inicio</a>
+                    <a href="parciales.html" class="navegacion__enlace navegacion-h">Parciales</a>
+                    
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Análisis Estadístico del Uso del Tiempo Libre</h2>
+        </div>
+    </header>
+
+
+    <main class="contenedor">
+        <h3 class="centrar-texto">Parcial 1</h3>    
+
+      <button onclick="toggleIndice()" class="btn-parcial">Ver Material del Primer Parcial</button>
+
+<div id="indice" class="indice-container" style="display: none;">
+  <h2 class="indice-title">Material del Primer Parcial</h2>
+  
+  <ul class="indice-list">
+    <li class="indice-item">
+      <strong>Videos:</strong>
+      <ul class="sublist">
+        <li>Video informativo</li>
+        <li>Video educativo 1</li>
+        <li>Video educativo 2</li>
+        <li>Video educativo 3</li>
+      </ul>
+    </li>
+    <li class="indice-item">
+      <strong>Archivos:</strong>
+      <ul class="sublist">
+        <li><a class="btn" href="#">Archivo en Word</a></li>
+        <li><a  class="btn" href="#">Archivo en Excel</a></li>
+        <li><a  class="btn" href="#">Informe</a></li>
+        <li><a  class="btn" href="#">Manual de Excel</a></li>
+        <li><a  class="btn" href="#">Manual de JAMOVI</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </main>
+
+     <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre_f no-margin centrar-texto">Trabajo<span class="logo__bold">De Aplicación</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="index.html" class="navegacion__enlace navegacion-f">Inicio</a>
+                    <a href="parciales.html" class="navegacion__enlace navegacion-f">Parciales</a>
+             
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="js/modernizr.js"></script>
+ <script>
+  function toggleIndice() {
+    const indice = document.getElementById('indice');
+    indice.style.display = indice.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
+
+</body>
+</html>
