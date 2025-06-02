@@ -60,11 +60,13 @@ img {
 
 /** Header **/
 .webp .header {
-     background-image: url(../img/sidebar-4.jpg);
-     background-position: bottom;
+     background-image: url(../img/actividades.avif);
+     background-size: 50%;
+     
 }
 .no-webp .header {
-    background-image: url(../img/sidebar-4.jpg);
+    background-image: url(../img/banner.webp);
+
 }
 .header {
     height: 60rem;
