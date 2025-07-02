@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial2</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Trabajo<span class="logo__bold">De Aplicación</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="index.html" class="navegacion__enlace navegacion-h">Inicio</a>
+                    <a href="parciales.html" class="navegacion__enlace navegacion-h">Parciales</a>
+                    
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Análisis Estadístico del Uso del Tiempo Libre</h2>
+        </div>
+    </header>
+
+
+    <main class="contenedor">
+        <h3 class="centrar-texto">Parcial 2</h3>    
+
+      <button onclick="toggleIndice()" class="btn-parcial">Ver Material del Segundo Parcial</button>
+
+<div id="indice" class="indice-container" style="display: none;">
+  <h2 class="indice-title">Material del Segundo Parcial</h2>
+  
+  <ul class="indice-list">
+    <li class="indice-item">
+      <strong>Videos:</strong>
+      <ul class="sublist">
+        <li>Video informativo</li>
+        <video src="videos/Video-Informativo2.mp4" controls class="video-player"></video>
+        <li>Video educativo </li>
+        <video src="videos/Video-Educativo2.mp4" controls class="video-player"></video>
+      </ul>
+    </li>
+    <li class="indice-item">
+      <strong>Archivos:</strong>
+      <ul class="sublist">
+        <li><a class="btn" href="https://drive.google.com/drive/folders/1WsrysIeVCbd8m9RmltEXmnvPNMfl5YT1?usp=drive_link " target="_blank">Archivos Yadira Loarte</a></li>
+        <li><a  class="btn" href="https://drive.google.com/drive/folders/1ko3VSS8od5ctFF5DY6b3L6y7q2aVIbxb?usp=drive_link " target="_blank">Archivos   Samuel Monte</a></li>
+        <li><a  class="btn" href="https://drive.google.com/drive/folders/1Zuk06Dxy-5DjFK9mdKP0CO4Hqf7mDvH1?usp=drive_link" target="_blank">Archivos Jorge Reyes</a></li>
+        <li><a  class="btn" href="https://drive.google.com/drive/folders/1-tM989cwc1Wb8PRJtK5y-6tmSB6u82sO" target="_blank">Archivos Sarahi Tupiza</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </main>
+
+     <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre_f no-margin centrar-texto">Trabajo<span class="logo__bold">De Aplicación</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="index.html" class="navegacion__enlace navegacion-f">Inicio</a>
+                    <a href="parciales.html" class="navegacion__enlace navegacion-f">Parciales</a>
+             
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="js/modernizr.js"></script>
+ <script>
+  function toggleIndice() {
+    const indice = document.getElementById('indice');
+    indice.style.display = indice.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
+
+</body>
+</html>
